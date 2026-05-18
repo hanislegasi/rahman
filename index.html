@@ -7,14 +7,14 @@
   <!-- Google Fonts: Inter & Playfair Display untuk gaya korporat -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --corp-blue: #0f172a;
-      --corp-gold: #c5a059;
-      --corp-silver: #e2e8f0;
-      --accent: #1e293b;
-      --glass: rgba(255, 255, 255, 0.03);
-      --border: rgba(255, 255, 255, 0.08);
-    }
+   :root {
+  --corp-blue: #111827;
+  --corp-gold: #d4af37;
+  --corp-silver: #f8fafc;
+  --accent: #1f2937;
+  --glass: rgba(255,255,255,0.03);
+  --border: rgba(212,175,55,0.15);
+}
 
     * {
       margin: 0;
@@ -71,6 +71,24 @@
       background: var(--accent);
     }
 
+    /* Logo Slot */
+    .logo-slot {
+      margin: 0 auto 24px;
+      height: 60px; /* Sedikit tinggi untuk menampung padding dan border */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-slot img {
+  max-height: 100%;
+  max-width: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  padding: 0;
+  background: transparent;
+}
+
     /* Typography */
     .name {
       font-family: 'Playfair Display', serif;
@@ -96,6 +114,17 @@
       text-transform: uppercase;
       letter-spacing: 3px;
     }
+
+/* Tambah kat bawah ni */
+.position {
+  margin-top: -35px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.5px;
+}
 
     /* Professional Links */
     .links-container {
@@ -173,7 +202,7 @@
     .section-content {
       font-size: 14px;
       line-height: 1.8;
-      color: #94a3b8;
+      color: #ffffff;
       font-weight: 400;
       text-align: justify; 
       text-justify: inter-word;
@@ -248,6 +277,12 @@
 <body>
 
 <div class="card">
+  <!-- Slot Logo Syarikat -->
+  <div class="logo-slot">
+    <!-- Gantikan URL di bawah dengan link logo syarikat anda -->
+    <img src="https://i.postimg.cc/JhLc8szZ/Copy-of-A.png" alt="Logo Syarikat">
+  </div>
+
   <!-- Slot Imej -->
   <div class="image-slot">
     <img src="https://i.postimg.cc/LXD672L6/Capture73.jpg" alt="Rahman Hj. Ishak">
@@ -257,7 +292,11 @@
   <h1 class="name">Rahman Hj. Ishak</h1>
   <div class="role-container">
     <p class="role">Pakar Pewarisan Islam</p>
-  </div>
+    </div>
+
+<div class="position">
+  Pengarah Urusan Al-Qawthar Mawaris Synergy
+</div
 
   <!-- Senarai Pautan Profesional -->
   <div class="links-container">
